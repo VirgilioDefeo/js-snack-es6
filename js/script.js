@@ -68,7 +68,22 @@ console.log("Solo nome e falli subiti:", nomiEFalli);
 
 // Snack 3 (Bonus)
 // Scrivere una funzione che accetti tre argomenti, un array e due numeri (a più piccolo di b).
+function argomenti(array, a, b) {
+    const nuovoArray = [];
+
+
+for (let i = 0; i < array.length; i++) {
+    if (i >= a && i <= b) {
+        nuovoArray.push(array[i])
+    }
+}
+return nuovoArray;
+}
 // La funzione ritornerà un nuovo array con i valori che hanno la posizione compresa tra i due numeri. Non usare i metodi di array di JS
 
+const numeri = [10, 20, 30, 40, 50, 60, 70];
+
+const risultato = argomenti(numeri, 2, 5);
+console.log(risultato);
 
 
